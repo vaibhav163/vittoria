@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles carried over 1:1 from the original static site's <style> block */
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}
+body { background: #FFFFFF; }
+.flap { font-variant-numeric: tabular-nums; }
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.in { opacity: 1; transform: translateY(0); }
+.mega { opacity: 0; visibility: hidden; transform: translateY(4px); transition: opacity .16s ease, transform .16s ease, visibility .16s; }
+.group:hover .mega, .mega:hover, .mega:focus-within { opacity: 1; visibility: visible; transform: translateY(0); }
+input:focus-visible, button:focus-visible, a:focus-visible { outline: 2px solid #00A0DE; outline-offset: 3px; }
+::selection { background: #00A0DE; color: #fff; }
+.underline-grow { position: relative; }
+.underline-grow::after { content: ""; position: absolute; left: 0; bottom: -3px; height: 1.5px; width: 0; background: #00A0DE; transition: width .25s ease; }
+.underline-grow:hover::after { width: 100%; }

@@ -1,0 +1,22 @@
+# Security headers — picked up automatically by Netlify and Cloudflare Pages.
+# If you host elsewhere (Apache/Nginx/cPanel), copy the same headers into
+# your server config or .htaccess; see FEATURES.md for the Apache version.
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' https://cdn.emailjs.com https://www.googletagmanager.com; connect-src 'self' https://api.emailjs.com https://www.google-analytics.com
+
+/images/*
+  Cache-Control: public, max-age=2592000
+
+/logos/*
+  Cache-Control: public, max-age=2592000
+
+/icons/*
+  Cache-Control: public, max-age=2592000
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
