@@ -5,7 +5,7 @@
  */
 export default function PageSkeleton() {
   return (
-    <main className="pt-[72px]" aria-busy="true" aria-label="Loading page">
+    <main aria-busy="true" aria-label="Loading page">
       <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-16 lg:py-24">
         <div className="h-3 w-32 bg-line animate-pulse" />
         <div className="mt-6 h-12 w-2/3 bg-line animate-pulse" />

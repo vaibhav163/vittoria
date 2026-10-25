@@ -2,50 +2,106 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.vittoriaaviation.com/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-10-25</lastmod>
   </url>
   <url>
-    <loc>https://www.vittoriaaviation.com/services</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.vittoriaaviation.com/about</loc>
+    <lastmod>2026-10-25</lastmod>
   </url>
   <url>
-    <loc>https://www.vittoriaaviation.com/governance</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.vittoriaaviation.com/about/leadership</loc>
+    <lastmod>2026-10-25</lastmod>
   </url>
   <url>
-    <loc>https://www.vittoriaaviation.com/compliance</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.vittoriaaviation.com/about/credentials</loc>
+    <lastmod>2026-10-25</lastmod>
   </url>
   <url>
-    <loc>https://www.vittoriaaviation.com/news</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://www.vittoriaaviation.com/about/ecosystem</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.vittoriaaviation.com/capabilities</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.vittoriaaviation.com/capabilities/mro</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.vittoriaaviation.com/capabilities/gse-leasing-and-maintenance</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.vittoriaaviation.com/capabilities/flight-clearance</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.vittoriaaviation.com/capabilities/aviation-training</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.vittoriaaviation.com/capabilities/aviation-consulting</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.vittoriaaviation.com/capabilities/robotic-dry-wash</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.vittoriaaviation.com/capabilities/aviation-manpower</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.vittoriaaviation.com/capabilities/india-market-entry</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.vittoriaaviation.com/partnerships</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.vittoriaaviation.com/partnerships/investment</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.vittoriaaviation.com/partnerships/india-market</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.vittoriaaviation.com/partnerships/oem-representation</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.vittoriaaviation.com/quality-and-compliance</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.vittoriaaviation.com/newsroom</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.vittoriaaviation.com/careers</loc>
+    <lastmod>2026-10-25</lastmod>
   </url>
   <url>
     <loc>https://www.vittoriaaviation.com/contact</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-10-25</lastmod>
   </url>
   <url>
     <loc>https://www.vittoriaaviation.com/privacy</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.vittoriaaviation.com/terms</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.vittoriaaviation.com/accessibility</loc>
+    <lastmod>2026-10-25</lastmod>
   </url>
   <url>
     <loc>https://www.vittoriaaviation.com/sitemap</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <lastmod>2026-10-25</lastmod>
   </url>
 </urlset>

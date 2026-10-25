@@ -14,8 +14,8 @@ body { background: #FFFFFF; }
 .reveal.in { opacity: 1; transform: translateY(0); }
 .mega { opacity: 0; visibility: hidden; transform: translateY(4px); transition: opacity .16s ease, transform .16s ease, visibility .16s; }
 .group:hover .mega, .mega:hover, .mega:focus-within { opacity: 1; visibility: visible; transform: translateY(0); }
-input:focus-visible, button:focus-visible, a:focus-visible { outline: 2px solid #00A0DE; outline-offset: 3px; }
-::selection { background: #00A0DE; color: #fff; }
+input:focus-visible, button:focus-visible, a:focus-visible { outline: 2px solid #4A6B8A; outline-offset: 3px; }
+::selection { background: #4A6B8A; color: #fff; }
 .underline-grow { position: relative; }
-.underline-grow::after { content: ""; position: absolute; left: 0; bottom: -3px; height: 1.5px; width: 0; background: #00A0DE; transition: width .25s ease; }
+.underline-grow::after { content: ""; position: absolute; left: 0; bottom: -3px; height: 1.5px; width: 0; background: #4A6B8A; transition: width .25s ease; }
 .underline-grow:hover::after { width: 100%; }

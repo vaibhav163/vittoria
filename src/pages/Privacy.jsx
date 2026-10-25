@@ -3,7 +3,7 @@ import Breadcrumbs from "../components/Breadcrumbs";
 import RelatedLinks from "../components/RelatedLinks";
 
 export default function Privacy() {
-  usePageMeta({ title: "Privacy Policy | Vittoria Aviation Private Limited", description: "Privacy policy of Vittoria Aviation Private Limited — how we collect, use and protect information submitted through vittoriaaviation.com.", path: "/privacy", crumbs: [{ label: "Home", path: "/" }, { label: "Privacy Policy", path: "/privacy" }] });
+  usePageMeta({ title: "Privacy Policy | Vittoria Aviation", description: "Privacy policy of Vittoria Aviation Private Limited — how we collect, use and protect information submitted through vittoriaaviation.com.", path: "/privacy", crumbs: [{ label: "Home", path: "/" }, { label: "Privacy Policy", path: "/privacy" }] });
   return (
     <main>
 <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Privacy Policy" }]} />
@@ -64,7 +64,7 @@ export default function Privacy() {
   </div>
 </section>
 
-<RelatedLinks items={[{ to: "/contact", title: "Contact & RFP", text: "Questions about your data — contact us here." }, { to: "/services", title: "Services", text: "The services this policy covers." }, { to: "/", title: "Home", text: "Back to the Vittoria Aviation homepage." }]} />
+<RelatedLinks items={[{ to: "/contact", title: "Contact & RFP", text: "Questions about your data — contact us here." }, { to: "/capabilities", title: "Capabilities", text: "The business lines this policy covers." }, { to: "/", title: "Home", text: "Back to the Vittoria Aviation homepage." }]} />
 </main>
   );
 }

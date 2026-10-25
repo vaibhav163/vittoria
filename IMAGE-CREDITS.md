@@ -51,3 +51,12 @@ Note: two photos show real airline liveries in ordinary airport operations
 (a United aircraft with a pushback tug, and an Air Canada aircraft in
 flight). If the client prefers no airline branding, replace
 `service-gse.webp` and `news.webp` with unbranded photos of the same names.
+
+| `india-market.webp` | Partnerships / India Market hero, Capability 08 | Airliner in flight, clear sky (photo-1569629743817) — Unsplash |
+| `india-sky.webp` | Partnerships / Investment split | Aircraft wing over mountain ranges (photo-1483304528321) — Unsplash |
+
+## Hero video (homepage)
+
+| File | Source |
+|---|---|
+| `public/videos/hero-loop.mp4` / `hero-loop.webm` | Wing over clouds, Pixabay video 142647 (free Pixabay licence) — trimmed to a 16s muted loop, 1920x1080, H.264 1.2 MB + VP9 WebM 0.3 MB. Poster: `public/images/hero-poster.webp` (frame from the clip). Interim asset — replace with the commissioned V-01 hero loop when shot (Source Document, Section 8). |

@@ -1,39 +1,51 @@
 import usePageMeta from "../hooks/usePageMeta";
 import { Link } from "react-router-dom";
+import { CAPABILITIES } from "../data/capabilities";
 
-// The original site's footer linked to a sitemap.html that was never
-// supplied, so this simple sitemap page replaces that dead link.
 const LINKS = [
   ["/", "Home"],
-  ["/services", "Services"],
-  ["/services#leasing", "Services — Aircraft Leasing"],
-  ["/services#mro", "Services — MRO & Cabin Maintenance"],
-  ["/services#representation", "Services — Airline Representation"],
-  ["/services#gse", "Services — Ground Support Equipment"],
-  ["/services#clearance", "Services — Flight Clearance Agency"],
-  ["/services#cargo", "Services — Airport & Cargo Management"],
-  ["/services#consulting", "Services — Consulting & Quality Audits"],
-  ["/services#training", "Services — Aviation Training & Manpower"],
-  ["/services#drywash", "Services — Robotic Dry Wash"],
-  ["/governance", "Governance & Leadership"],
-  ["/compliance", "Compliance"],
-  ["/news", "News & Media"],
-  ["/contact", "Contact & RFP"],
+  ["/about", "About — Company"],
+  ["/about/leadership", "About — Leadership"],
+  ["/about/credentials", "About — Credentials and Approvals"],
+  ["/about/ecosystem", "About — Ecosystem"],
+  ["/capabilities", "Capabilities"],
+  ...CAPABILITIES.map((c) => [
+    `/capabilities/${c.slug}`,
+    `Capabilities — ${c.num} ${c.name}`,
+  ]),
+  ["/partnerships", "Partnerships & Investment"],
+  ["/partnerships/investment", "Investment and Joint Ventures"],
+  ["/partnerships/india-market", "The India Opportunity"],
+  ["/partnerships/oem-representation", "OEM and Technology Representation"],
+  ["/quality-and-compliance", "Quality and Compliance"],
+  ["/newsroom", "Newsroom"],
+  ["/careers", "Careers"],
+  ["/contact", "Contact"],
   ["/privacy", "Privacy Policy"],
+  ["/terms", "Terms of Use"],
+  ["/accessibility", "Accessibility Statement"],
 ];
 
 export default function Sitemap() {
-  usePageMeta({ title: "Sitemap | Vittoria Aviation Private Limited", description: "Sitemap of vittoriaaviation.com — all pages of Vittoria Aviation Private Limited.", path: "/sitemap" });
+  usePageMeta({
+    title: "Sitemap | Vittoria Aviation",
+    description:
+      "Sitemap of vittoriaaviation.com — every page of Vittoria Aviation Private Limited.",
+    path: "/sitemap",
+  });
   return (
-    <main className="pt-[72px]">
+    <main>
       <section className="mx-auto max-w-[1440px] px-6 lg:px-12 py-16 lg:py-24">
-        <h1 className="font-light text-[32px] lg:text-[44px] text-abus-900 tracking-tight">
+        <span className="font-mono text-[11px] tracking-[0.2em] text-gold-dark uppercase">
           Sitemap
+        </span>
+        <h1 className="mt-4 font-semibold text-[32px] lg:text-[44px] text-abus-900 tracking-tight">
+          Every page on this site
         </h1>
-        <ul className="mt-8 space-y-3 text-[15px] text-ink-700">
+        <ul className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-3 text-[15px] text-ink-700">
           {LINKS.map(([to, label]) => (
-            <li key={to + label}>
-              <Link to={to} className="hover:text-abus-500 transition">
+            <li key={to}>
+              <Link to={to} className="hover:text-gold-dark transition">
                 {label}
               </Link>
             </li>

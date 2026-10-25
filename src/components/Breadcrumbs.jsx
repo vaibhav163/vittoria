@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
  */
 export default function Breadcrumbs({ items }) {
   return (
-    <div className="bg-white border-b border-line pt-[72px]">
+    <div className="bg-white border-b border-line">
       <nav
         aria-label="Breadcrumb"
         className="mx-auto max-w-[1440px] px-6 lg:px-12 py-3 text-[12px] font-mono uppercase tracking-wide text-ink-500"

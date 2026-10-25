@@ -58,6 +58,8 @@ You need 3 values from the EmailJS website:
    Organisation: {{organization}}
    Email: {{reply_to}}
    Phone: {{phone}}
+   Country: {{country}}
+   Consent to contact: {{consent}}
    Service Interest: {{service_interest}}
 
    Message:
@@ -66,7 +68,7 @@ You need 3 values from the EmailJS website:
 
    These `{{...}}` names are fixed — they must match the form fields
    exactly, otherwise that detail will come blank in the email:
-   `from_name`, `organization`, `reply_to`, `phone`,
+   `from_name`, `organization`, `country`, `reply_to`, `phone`, `consent`,
    `service_interest`, `message`.
 
 6. Click **Save**. On the templates list, copy the **Template ID**

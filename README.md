@@ -17,7 +17,7 @@ npm run build      # creates the dist/ folder
 npm run preview    # preview the production build
 ```
 
-Note: this is a single-page app with real URLs (/services, /contact, ...).
+Note: this is a single-page app with real URLs (/capabilities, /about/leadership, /contact, ...). Structure and copy follow the client's Website Source Document VA/WEB/SRC/2026/002.
 When you host the `dist/` folder, set a rewrite/fallback so every route
 serves `index.html` (on Netlify: add a `_redirects` file with `/* /index.html 200`;
 on Vercel/Apache/Nginx the same SPA fallback rule applies).
@@ -50,14 +50,24 @@ scripts/
 
 | Route | Page |
 |---|---|
-| `/` | Home |
-| `/services` | Services (anchors: #leasing #mro #representation #gse #clearance #cargo #consulting #training #drywash) |
-| `/governance` | Governance & Leadership |
-| `/compliance` | Compliance |
-| `/news` | News & Media |
-| `/contact` | Contact & RFP |
-| `/privacy` | Privacy Policy |
-| `/sitemap` | Sitemap (the original footer linked to a sitemap.html that was never made) |
+| `/` | Home — hero, proposition, stats, 3 capability families, credential strip, CTA |
+| `/about` | About — Company |
+| `/about/leadership` | About — Leadership |
+| `/about/credentials` | About — Credentials and Approvals |
+| `/about/ecosystem` | About — Ecosystem (partners) |
+| `/capabilities` | Capabilities index — 8 lines in 3 families |
+| `/capabilities/:slug` | Each business line (mro, gse-leasing-and-maintenance, flight-clearance, aviation-training, aviation-consulting, robotic-dry-wash, aviation-manpower, india-market-entry) |
+| `/partnerships` | Partnerships & Investment — overview |
+| `/partnerships/investment` | Investment and Joint Ventures |
+| `/partnerships/india-market` | The India Opportunity |
+| `/partnerships/oem-representation` | OEM and Technology Representation |
+| `/quality-and-compliance` | Quality and Compliance |
+| `/newsroom` | Newsroom |
+| `/careers` | Careers |
+| `/contact` | Contact — enquiry form routed by business line |
+| `/privacy` `/terms` `/accessibility` | Legal pages |
+| `/sitemap` | Sitemap |
+| (redirects) | Old URLs `/services` `/governance` `/compliance` `/news` redirect to the new structure |
 
 ## One thing still pending (same as the HTML version)
 

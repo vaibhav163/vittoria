@@ -1,108 +1,112 @@
 import { Link } from "react-router-dom";
-import RfpForm from "./RfpForm";
+import { CAPABILITIES } from "../data/capabilities";
 
-export default function Footer({ variant }) {
-  if (variant === "home") {
-    return (
-      <footer id="contact" className="relative bg-white border-t border-line">
-  <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-20 lg:py-24 grid lg:grid-cols-[1fr_1fr] gap-16">
-
-    <div className="reveal">
-      <span className="font-mono text-[11px] tracking-[0.2em] text-abus-500 uppercase">Request For Proposal</span>
-      <h2 className="mt-4 font-light text-[28px] lg:text-[36px] text-abus-900 tracking-tight leading-tight">Start a conversation<br /><span className="font-bold">with our team.</span></h2>
-      <p className="mt-4 text-ink-500 text-[14.5px] leading-relaxed max-w-md">Tell us about your operation and we'll route it to the right desk — leasing, ground handling, MRO or consulting.</p>
-
-      <RfpForm variant="short" className="mt-9 space-y-4 max-w-md" />
-    </div>
-
-    <div className="reveal grid sm:grid-cols-2 gap-10 lg:pl-10 lg:border-l lg:border-line">
-      <div>
-        <div className="font-mono text-[11px] tracking-[0.14em] text-ink-500 uppercase mb-3">Registered Office</div>
-        <p className="text-[14.5px] text-abus-900 leading-relaxed">Vittoria Aviation Private Limited<br />Dwarka, New Delhi, India</p>
-
-        <div className="font-mono text-[11px] tracking-[0.14em] text-ink-500 uppercase mt-7 mb-3">Direct Lines</div>
-        <p className="text-[14.5px] text-abus-900 leading-relaxed">
-          <a href="tel:+919818088199" className="hover:text-abus-500 transition">+91 98180 88199</a><br />
-          <a href="tel:+919873444155" className="hover:text-abus-500 transition">+91 98734 44155</a>
-        </p>
-
-        <div className="font-mono text-[11px] tracking-[0.14em] text-ink-500 uppercase mt-7 mb-3">Email</div>
-        <p className="text-[14.5px] text-abus-900 leading-relaxed">
-          <a href="mailto:vittoria@vittoriaaviation.com" className="hover:text-abus-500 transition">vittoria@vittoriaaviation.com</a><br />
-          <a href="mailto:baljinder@vittoriaaviation.com" className="hover:text-abus-500 transition">baljinder@vittoriaaviation.com</a>
-        </p>
-      </div>
-      <div>
-        <div className="font-mono text-[11px] tracking-[0.14em] text-ink-500 uppercase mb-3">Regulatory</div>
-        <p className="text-[13.5px] text-ink-500 leading-relaxed">BCAS-cleared Auxiliary Service Provider<br />Ministry of Civil Aviation, Govt. of India</p>
-
-        <div className="font-mono text-[11px] tracking-[0.14em] text-ink-500 uppercase mt-7 mb-3">Tax Identifiers</div>
-        <p className="text-[13.5px] text-ink-500 font-mono leading-relaxed">GST: 07AAFCV8947HIZS<br />PAN: AAFCV8947H</p>
-      </div>
-    </div>
-  </div>
-
-  <div className="border-t border-line">
-    <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[12px] text-ink-500">
-      <span>© 2026 Vittoria Aviation Private Limited. All rights reserved.</span>
-      <div className="flex gap-6 uppercase tracking-wide">
-        <Link to="/privacy" className="hover:text-abus-900 transition">Privacy</Link>
-        <Link to="/sitemap" className="hover:text-abus-900 transition">Sitemap</Link>
-        <a href="#" className="hover:text-abus-900 transition">Careers</a>
-      </div>
-    </div>
-  </div>
-</footer>
-    );
-  }
+/**
+ * Footer per Source Document Section 5.1: full sitemap in four columns,
+ * registered office, CIN and GSTIN, and the legal links.
+ */
+export default function Footer() {
   return (
-    <footer className="relative bg-white border-t border-line">
-  <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-16 lg:py-20 grid lg:grid-cols-[1fr_1fr] gap-16 items-start">
+    <footer className="bg-abus-900 text-white">
+      <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-16 lg:py-20">
+        <div className="grid gap-12 lg:grid-cols-[1.3fr_1fr_1fr_1.2fr]">
+          <div>
+            <div className="flex items-center gap-3">
+              <svg width="40" height="40" viewBox="0 0 100 100" aria-hidden="true">
+                <rect width="100" height="100" rx="16" fill="#FFFFFF" />
+                <path
+                  d="M50 20 L57 46 L84 53 L57 57 L53 80 L50 64 L47 80 L43 57 L16 53 L43 46 Z"
+                  fill="#14284B"
+                />
+              </svg>
+              <span className="leading-none">
+                <span className="block font-bold tracking-[0.14em] text-[15px]">VITTORIA</span>
+                <span className="block font-medium tracking-[0.34em] text-[10.5px] text-abus-300 mt-1">
+                  AVIATION
+                </span>
+              </span>
+            </div>
+            <p className="mt-6 text-[13.5px] leading-relaxed text-white/70 max-w-xs">
+              A licensed, security-cleared aviation platform in New Delhi —
+              maintenance, ground support equipment, flight clearance, training,
+              consulting and manpower, on one regulatory base.
+            </p>
+            <p className="mt-6 font-mono text-[11px] tracking-wide text-gold-light">
+              YOUR PARTNER IN EXCELLENCE
+            </p>
+          </div>
 
-    <div className="reveal">
-      <span className="font-mono text-[11px] tracking-[0.2em] text-abus-500 uppercase">Request For Proposal</span>
-      <h2 className="mt-4 font-light text-[26px] lg:text-[32px] text-abus-900 tracking-tight leading-tight">Have a requirement? <span className="font-bold">Let's talk.</span></h2>
-      <p className="mt-3 text-ink-500 text-[14.5px] leading-relaxed max-w-md">Tell us about your operation and we'll route it to the right desk — leasing, ground handling, MRO or consulting.</p>
-      <Link to="/contact" className="mt-6 inline-block bg-abus-900 hover:bg-abus-700 text-white font-semibold text-[13.5px] px-6 py-3 transition">Submit an RFP</Link>
-    </div>
+          <nav aria-label="About and capabilities">
+            <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-gold-light">About</div>
+            <ul className="mt-4 space-y-2.5 text-[13.5px] text-white/80">
+              <li><Link to="/about" className="hover:text-white transition">Company</Link></li>
+              <li><Link to="/about/leadership" className="hover:text-white transition">Leadership</Link></li>
+              <li><Link to="/about/credentials" className="hover:text-white transition">Credentials and Approvals</Link></li>
+              <li><Link to="/about/ecosystem" className="hover:text-white transition">Ecosystem</Link></li>
+              <li><Link to="/newsroom" className="hover:text-white transition">Newsroom</Link></li>
+              <li><Link to="/careers" className="hover:text-white transition">Careers</Link></li>
+            </ul>
+            <div className="mt-8 font-mono text-[11px] uppercase tracking-[0.18em] text-gold-light">Quality</div>
+            <ul className="mt-4 space-y-2.5 text-[13.5px] text-white/80">
+              <li><Link to="/quality-and-compliance" className="hover:text-white transition">Quality and Compliance</Link></li>
+            </ul>
+          </nav>
 
-    <div className="reveal grid sm:grid-cols-2 gap-10 lg:pl-10 lg:border-l lg:border-line">
-      <div>
-        <div className="font-mono text-[11px] tracking-[0.14em] text-ink-500 uppercase mb-3">Registered Office</div>
-        <p className="text-[14.5px] text-abus-900 leading-relaxed">Vittoria Aviation Private Limited<br />Dwarka, New Delhi, India</p>
+          <nav aria-label="Capabilities">
+            <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-gold-light">Capabilities</div>
+            <ul className="mt-4 space-y-2.5 text-[13.5px] text-white/80">
+              {CAPABILITIES.map((c) => (
+                <li key={c.slug}>
+                  <Link to={`/capabilities/${c.slug}`} className="hover:text-white transition">
+                    {c.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
-        <div className="font-mono text-[11px] tracking-[0.14em] text-ink-500 uppercase mt-7 mb-3">Direct Lines</div>
-        <p className="text-[14.5px] text-abus-900 leading-relaxed">
-          <a href="tel:+919818088199" className="hover:text-abus-500 transition">+91 98180 88199</a><br />
-          <a href="tel:+919873444155" className="hover:text-abus-500 transition">+91 98734 44155</a>
-        </p>
-
-        <div className="font-mono text-[11px] tracking-[0.14em] text-ink-500 uppercase mt-7 mb-3">Email</div>
-        <p className="text-[14.5px] text-abus-900 leading-relaxed">
-          <a href="mailto:vittoria@vittoriaaviation.com" className="hover:text-abus-500 transition">vittoria@vittoriaaviation.com</a><br />
-          <a href="mailto:baljinder@vittoriaaviation.com" className="hover:text-abus-500 transition">baljinder@vittoriaaviation.com</a>
-        </p>
+          <div>
+            <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-gold-light">Registered Office</div>
+            <p className="mt-4 text-[13.5px] leading-relaxed text-white/80">
+              Vittoria Aviation Private Limited
+              <br />
+              291, Block-A, Sector 8, Dwarka,
+              <br />
+              New Delhi 110077, India
+            </p>
+            <p className="mt-5 text-[13.5px] leading-relaxed text-white/80">
+              <a href="mailto:vittoria@vittoriaaviation.com" className="hover:text-white transition">
+                vittoria@vittoriaaviation.com
+              </a>
+              <br />
+              <a href="mailto:baljinder@vittoriaaviation.com" className="hover:text-white transition">
+                baljinder@vittoriaaviation.com
+              </a>
+              <br />
+              <a href="tel:+919873444155" className="hover:text-white transition">+91 98734 44155</a>
+              {"  ·  "}
+              <a href="tel:+919818088199" className="hover:text-white transition">+91 98180 88199</a>
+            </p>
+            <p className="mt-5 font-mono text-[11.5px] leading-relaxed text-white/60">
+              CIN U52231DL2017PTC316712
+              <br />
+              GSTIN 07AAFCV8947H1ZS · PAN AAFCV8947H
+            </p>
+          </div>
+        </div>
       </div>
-      <div>
-        <div className="font-mono text-[11px] tracking-[0.14em] text-ink-500 uppercase mb-3">Regulatory</div>
-        <p className="text-[13.5px] text-ink-500 leading-relaxed">BCAS-cleared Auxiliary Service Provider<br />Ministry of Civil Aviation, Govt. of India</p>
 
-        <div className="font-mono text-[11px] tracking-[0.14em] text-ink-500 uppercase mt-7 mb-3">Tax Identifiers</div>
-        <p className="text-[13.5px] text-ink-500 font-mono leading-relaxed">GST: 07AAFCV8947HIZS<br />PAN: AAFCV8947H</p>
+      <div className="border-t border-white/15">
+        <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-[12px] text-white/60">
+          <span>© 2026 Vittoria Aviation Private Limited. All rights reserved.</span>
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 uppercase tracking-wide">
+            <Link to="/privacy" className="hover:text-white transition">Privacy</Link>
+            <Link to="/terms" className="hover:text-white transition">Terms</Link>
+            <Link to="/accessibility" className="hover:text-white transition">Accessibility</Link>
+            <Link to="/sitemap" className="hover:text-white transition">Sitemap</Link>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <div className="border-t border-line">
-    <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[12px] text-ink-500">
-      <span>© 2026 Vittoria Aviation Private Limited. All rights reserved.</span>
-      <div className="flex gap-6 uppercase tracking-wide">
-        <Link to="/privacy" className="hover:text-abus-900 transition">Privacy</Link>
-        <Link to="/sitemap" className="hover:text-abus-900 transition">Sitemap</Link>
-        <a href="#" className="hover:text-abus-900 transition">Careers</a>
-      </div>
-    </div>
-  </div>
-</footer>
+    </footer>
   );
 }

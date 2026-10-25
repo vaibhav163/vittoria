@@ -1,5 +1,20 @@
 # Feature Checklist — Vittoria Aviation React Site
 
+## Redesign — October 2026 (per Source Document VA/WEB/SRC/2026/002)
+
+The site was rebuilt to the client's own Brand, Content and Design Source
+Document: new brand palette (Vittoria Navy #14284B, Steel Blue #4A6B8A,
+Gold #B08D3F, Mist #EEF2F7), Airbus-style structure (5 primary nav items,
+full-bleed hero, credential strip, statistic rows, six-component library),
+26 routes covering About (Company/Leadership/Credentials/Ecosystem),
+8 capability pages in 3 families, Partnerships (Investment, India
+Opportunity, OEM Representation), Quality and Compliance, Newsroom,
+Careers, Contact and legal pages. Old URLs redirect to the new structure.
+Copy is the document's final copy, used as written; confidential investor
+material (margins, deal structures, anchor identity, certificate scans)
+was deliberately kept off the site, per the document's public/private line.
+
+
 All 21 items, where each one lives in the project:
 
 | # | Feature | Where / how |
