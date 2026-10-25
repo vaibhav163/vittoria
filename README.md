@@ -32,18 +32,31 @@ public/images/              -> photos used across the site, WebP format (see IMA
 src/
   main.jsx                  -> entry point
   App.jsx                   -> all routes + layout (Header / page / Footer)
-  index.css                 -> Tailwind + the original site's custom CSS
-  config.js                 -> EmailJS keys — EDIT THIS ONE FILE to connect the form
-  hooks/usePageEffects.js   -> scroll-to-anchor, .reveal animations, animated counters
+  index.css                 -> Tailwind + custom CSS (reveal animations, reduced-motion)
+  config.js                 -> EmailJS keys + site config — EDIT THIS ONE FILE to connect the form
+  data/capabilities.js      -> the 8 business lines, 3 families and credential records (single source)
+  hooks/usePageEffects.js   -> scroll handling + .reveal animations
+  hooks/usePageMeta.js      -> per-page title, meta description, canonical, OG, breadcrumb schema
+  lib/track.js              -> conversion event tracking (consent-gated)
   components/
-    Header.jsx              -> shared header + mega menu + mobile menu
-    Footer.jsx              -> shared footer (home variant has the RFP form)
-    RfpForm.jsx             -> the RFP/contact form (variant="short" home, "full" contact)
+    Header.jsx              -> secondary bar + primary nav with dropdowns + gold CTA + mobile menu
+    Footer.jsx              -> navy sitemap footer with CIN / GSTIN
+    design.jsx              -> the six-component library (Hero, CapabilityCard, CredentialStrip, SplitFeature, StatRow)
+    ContactBlock.jsx        -> C6 contact block closing every page (short form + direct lines)
+    RfpForm.jsx             -> enquiry form (variant="short" block, "full" contact page)
+    Breadcrumbs.jsx  RelatedLinks.jsx  CookieConsent.jsx  Toast.jsx  PageSkeleton.jsx  EmptyState.jsx
   pages/
-    Home.jsx  Services.jsx  Governance.jsx  Compliance.jsx
-    News.jsx  Contact.jsx   Privacy.jsx   Sitemap.jsx  NotFound.jsx
-scripts/
-  convert.py                -> the script that generated the page components from the original HTML
+    Home.jsx  About.jsx  Leadership.jsx  Credentials.jsx  Ecosystem.jsx
+    Capabilities.jsx  CapabilityDetail.jsx  Partnerships.jsx  Investment.jsx
+    IndiaMarket.jsx  OemRepresentation.jsx  Quality.jsx  Newsroom.jsx
+    Careers.jsx  Contact.jsx  Privacy.jsx  Terms.jsx  Accessibility.jsx
+    Sitemap.jsx  NotFound.jsx
+public/
+  images/                   -> photos (WebP) + hero poster — replace by dropping in same-name files
+  videos/hero-loop.*        -> homepage hero video loop (MP4 + WebM), interim stock clip
+  logos/                    -> partner logos (Ecosystem page)
+  icons/  og-cover.jpg  sitemap.xml  robots.txt  _headers  site.webmanifest
+
 ```
 
 ## Pages / routes
