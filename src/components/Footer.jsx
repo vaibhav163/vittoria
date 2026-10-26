@@ -11,19 +11,16 @@ export default function Footer() {
       <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-16 lg:py-20">
         <div className="grid gap-12 lg:grid-cols-[1.3fr_1fr_1fr_1.2fr]">
           <div>
-            <div className="flex items-center gap-3">
-              <svg width="40" height="40" viewBox="0 0 100 100" aria-hidden="true">
-                <rect width="100" height="100" rx="16" fill="#FFFFFF" />
-                <path
-                  d="M50 20 L57 46 L84 53 L57 57 L53 80 L50 64 L47 80 L43 57 L16 53 L43 46 Z"
-                  fill="#14284B"
-                />
-              </svg>
-              <span className="leading-none">
-                <span className="block font-bold tracking-[0.14em] text-[15px]">VITTORIA</span>
-                <span className="block font-medium tracking-[0.34em] text-[10.5px] text-abus-300 mt-1">
-                  AVIATION
-                </span>
+            <div className="flex items-center gap-3.5">
+              <img
+                src="/images/vittoria-logo.webp"
+                alt="Vittoria Aviation logo"
+                width="48"
+                height="48"
+                className="h-12 w-12 shrink-0"
+              />
+              <span className="font-bold tracking-[0.06em] leading-none whitespace-nowrap text-[19px] text-white">
+                VITTORIA <span className="text-gold-light">AVIATION</span>
               </span>
             </div>
             <p className="mt-6 text-[13.5px] leading-relaxed text-white/70 max-w-xs">

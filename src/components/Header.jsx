@@ -22,18 +22,6 @@ const PARTNER_LINKS = [
   { to: "/partnerships/oem-representation", label: "OEM and Technology Representation" },
 ];
 
-function LogoMark({ size = 38 }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 100 100" aria-hidden="true">
-      <rect width="100" height="100" rx="16" fill="#14284B" />
-      <path
-        d="M50 20 L57 46 L84 53 L57 57 L53 80 L50 64 L47 80 L43 57 L16 53 L43 46 Z"
-        fill="#FFFFFF"
-      />
-    </svg>
-  );
-}
-
 function Drop({ label, to, children, wide = false }) {
   return (
     <div className="group relative">
@@ -92,15 +80,16 @@ export default function Header() {
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-line">
         <div className="mx-auto max-w-[1440px] px-6 lg:px-12">
           <div className="flex items-center justify-between h-[72px] gap-6">
-            <Link to="/" className="flex items-center gap-3 shrink-0" aria-label="Vittoria Aviation — home">
-              <LogoMark />
-              <span className="leading-none">
-                <span className="block font-bold tracking-[0.14em] text-[15px] text-abus-900">
-                  VITTORIA
-                </span>
-                <span className="block font-medium tracking-[0.34em] text-[10.5px] text-abus-500 mt-1">
-                  AVIATION
-                </span>
+            <Link to="/" className="flex items-center gap-3 sm:gap-3.5 shrink-0" aria-label="Vittoria Aviation — home">
+              <img
+                src="/images/vittoria-logo.webp"
+                alt="Vittoria Aviation logo"
+                width="52"
+                height="52"
+                className="h-11 w-11 sm:h-[52px] sm:w-[52px] shrink-0"
+              />
+              <span className="font-bold tracking-[0.06em] leading-none whitespace-nowrap text-[16px] sm:text-[21px] lg:text-[22px] text-abus-900">
+                VITTORIA <span className="text-gold-dark">AVIATION</span>
               </span>
             </Link>
 
